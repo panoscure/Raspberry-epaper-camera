@@ -23,3 +23,10 @@ Edit file "ftp_upload.py" and fill the following variables
 
 Edit file "camera.py" and update the following variable
 1. images_path: the local path where you keep your images
+
+To Make it Run every time it reboots you may add it to rc.local
+edit file: sudo nano /etc/rc.local
+Just before the exit add something like bellow(change it to your path)
+
+"sudo python3 /home/pi/progs/sensor/camera/camera.py &
+exit 0"
